@@ -1,0 +1,137 @@
+//Base de Datos (Red Social)
+db.usuarios.insertMany([
+    { _id: 1, nombre: "Juan Pérez", correo: "juan.perez@gmail.com", usuario: "juanp", fechaNacimiento: ISODate("1990-01-15"), ubicacion: { pais: "Colombia", ciudad: "Bogotá" }, amigos: [2, 3] },
+    { _id: 2, nombre: "Ana Gómez", correo: "ana.gomez@gmail.com", usuario: "anag", fechaNacimiento: ISODate("1992-02-20"), ubicacion: { pais: "Colombia", ciudad: "Medellín" }, amigos: [1, 4] },
+    { _id: 3, nombre: "Carlos Ramírez", correo: "carlos.ramirez@gmail.com", usuario: "carlosr", fechaNacimiento: ISODate("1989-03-10"), ubicacion: { pais: "Colombia", ciudad: "Cali" }, amigos: [1, 5] },
+    { _id: 4, nombre: "Luisa Martínez", correo: "luisa.martinez@gmail.com", usuario: "luisam", fechaNacimiento: ISODate("1995-04-18"), ubicacion: { pais: "Colombia", ciudad: "Barranquilla" }, amigos: [2, 6] },
+    { _id: 5, nombre: "Daniel Torres", correo: "daniel.torres@gmail.com", usuario: "danielt", fechaNacimiento: ISODate("1998-05-25"), ubicacion: { pais: "Colombia", ciudad: "Cartagena" }, amigos: [3, 7] },
+    { _id: 6, nombre: "María Rodríguez", correo: "maria.rodriguez@gmail.com", usuario: "mariar", fechaNacimiento: ISODate("1993-06-30"), ubicacion: { pais: "Colombia", ciudad: "Manizales" }, amigos: [4, 8] },
+    { _id: 7, nombre: "Santiago Morales", correo: "santiago.morales@gmail.com", usuario: "santiagom", fechaNacimiento: ISODate("1997-07-10"), ubicacion: { pais: "Colombia", ciudad: "Pereira" }, amigos: [5, 9] },
+    { _id: 8, nombre: "Catalina López", correo: "catalina.lopez@gmail.com", usuario: "catalinal", fechaNacimiento: ISODate("1991-08-15"), ubicacion: { pais: "Colombia", ciudad: "Bucaramanga" }, amigos: [6, 10] },
+    { _id: 9, nombre: "Felipe Sánchez", correo: "felipe.sanchez@gmail.com", usuario: "felipes", fechaNacimiento: ISODate("1994-09-20"), ubicacion: { pais: "Colombia", ciudad: "Ibagué" }, amigos: [7, 11] },
+    { _id: 10, nombre: "Camila Restrepo", correo: "camila.restrepo@gmail.com", usuario: "camilar", fechaNacimiento: ISODate("1996-10-25"), ubicacion: { pais: "Colombia", ciudad: "Villavicencio" }, amigos: [8, 12] },
+    { _id: 11, nombre: "Andrés Castaño", correo: "andres.castano@gmail.com", usuario: "andresc", fechaNacimiento: ISODate("1992-11-12"), ubicacion: { pais: "Colombia", ciudad: "Popayán" }, amigos: [9, 13] },
+    { _id: 12, nombre: "Diana Vargas", correo: "diana.vargas@gmail.com", usuario: "dianav", fechaNacimiento: ISODate("1993-12-08"), ubicacion: { pais: "Colombia", ciudad: "Cúcuta" }, amigos: [10, 14] },
+    { _id: 13, nombre: "Luis Paredes", correo: "luis.paredes@gmail.com", usuario: "luisp", fechaNacimiento: ISODate("1990-05-15"), ubicacion: { pais: "Colombia", ciudad: "Santa Marta" }, amigos: [11, 15] },
+    { _id: 14, nombre: "Elena Ruiz", correo: "elena.ruiz@gmail.com", usuario: "elenar", fechaNacimiento: ISODate("1995-01-05"), ubicacion: { pais: "Colombia", ciudad: "Neiva" }, amigos: [12, 16] },
+    { _id: 15, nombre: "Mateo Castro", correo: "mateo.castro@gmail.com", usuario: "mateoc", fechaNacimiento: ISODate("1997-07-23"), ubicacion: { pais: "Colombia", ciudad: "Pasto" }, amigos: [13, 17] },
+    { _id: 16, nombre: "Paula Ortega", correo: "paula.ortega@gmail.com", usuario: "paulao", fechaNacimiento: ISODate("1992-03-12"), ubicacion: { pais: "Colombia", ciudad: "Armenia" }, amigos: [14, 18] },
+    { _id: 17, nombre: "Gabriel Ruiz", correo: "gabriel.ruiz@gmail.com", usuario: "gabrielr", fechaNacimiento: ISODate("1999-08-09"), ubicacion: { pais: "Colombia", ciudad: "Tunja" }, amigos: [15, 19] },
+    { _id: 18, nombre: "Alejandra Rojas", correo: "alejandra.rojas@gmail.com", usuario: "alejandrar", fechaNacimiento: ISODate("1996-11-04"), ubicacion: { pais: "Colombia", ciudad: "Quibdó" }, amigos: [16, 20] },
+    { _id: 19, nombre: "José Valencia", correo: "jose.valencia@gmail.com", usuario: "josev", fechaNacimiento: ISODate("1988-05-29"), ubicacion: { pais: "Colombia", ciudad: "Montería" }, amigos: [17, 21] },
+    { _id: 20, nombre: "Sofía Hernández", correo: "sofia.hernandez@gmail.com", usuario: "sofiah", fechaNacimiento: ISODate("1994-09-12"), ubicacion: { pais: "Colombia", ciudad: "Leticia" }, amigos: [18, 22] },
+    { _id: 21, nombre: "Victoria Mejía", correo: "victoria.mejia@gmail.com", usuario: "victoriam", fechaNacimiento: ISODate("1998-06-05"), ubicacion: { pais: "Colombia", ciudad: "Sincelejo" }, amigos: [19, 23] },
+    { _id: 22, nombre: "Manuel García", correo: "manuel.garcia@gmail.com", usuario: "manuelg", fechaNacimiento: ISODate("1993-02-15"), ubicacion: { pais: "Colombia", ciudad: "Florencia" }, amigos: [20, 24] },
+    { _id: 23, nombre: "Lorena Díaz", correo: "lorena.diaz@gmail.com", usuario: "lorenad", fechaNacimiento: ISODate("1995-07-19"), ubicacion: { pais: "Colombia", ciudad: "Riohacha" }, amigos: [21, 25] },
+    { _id: 24, nombre: "Sebastián Álvarez", correo: "sebastian.alvarez@gmail.com", usuario: "sebastiana", fechaNacimiento: ISODate("1990-04-22"), ubicacion: { pais: "Colombia", ciudad: "San Andrés" }, amigos: [22, 26] },
+    { _id: 25, nombre: "Isabella Gutiérrez", correo: "isabella.gutierrez@gmail.com", usuario: "isabellag", fechaNacimiento: ISODate("1997-03-28"), ubicacion: { pais: "Colombia", ciudad: "Puerto Carreño" }, amigos: [23, 27] },
+    { _id: 26, nombre: "Tomás Salazar", correo: "tomas.salazar@gmail.com", usuario: "tomass", fechaNacimiento: ISODate("1991-09-07"), ubicacion: { pais: "Colombia", ciudad: "Mitú" }, amigos: [24, 28] },
+    { _id: 27, nombre: "Valentina López", correo: "valentina.lopez@gmail.com", usuario: "valentinal", fechaNacimiento: ISODate("1994-10-14"), ubicacion: { pais: "Colombia", ciudad: "Inírida" }, amigos: [25, 29] },
+    { _id: 28, nombre: "Diego Muñoz", correo: "diego.munoz@gmail.com", usuario: "diegom", fechaNacimiento: ISODate("1996-01-23"), ubicacion: { pais: "Colombia", ciudad: "Yopal" }, amigos: [26, 30] },
+    { _id: 29, nombre: "Natalia Castro", correo: "natalia.castro@gmail.com", usuario: "nataliac", fechaNacimiento: ISODate("1992-11-18"), ubicacion: { pais: "Colombia", ciudad: "Arauca" }, amigos: [27, 31] },
+    { _id: 30, nombre: "Ricardo Ruiz", correo: "ricardo.ruiz@gmail.com", usuario: "ricardor", fechaNacimiento: ISODate("1989-07-11"), ubicacion: { pais: "Colombia", ciudad: "Mocoa" }, amigos: [28, 32] },
+    { _id: 31, nombre: "Mónica Vega", correo: "monica.vega@gmail.com", usuario: "monicav", fechaNacimiento: ISODate("1993-05-02"), ubicacion: { pais: "Colombia", ciudad: "Puerto Inírida" }, amigos: [29, 33] },
+    { _id: 32, nombre: "Fabio Suárez", correo: "fabio.suarez@gmail.com", usuario: "fabios", fechaNacimiento: ISODate("1996-12-12"), ubicacion: { pais: "Colombia", ciudad: "Valledupar" }, amigos: [30, 34] },
+    { _id: 33, nombre: "Claudia Correa", correo: "claudia.correa@gmail.com", usuario: "claudiac", fechaNacimiento: ISODate("1997-06-30"), ubicacion: { pais: "Colombia", ciudad: "San José del Guaviare" }, amigos: [31, 35] },
+    { _id: 34, nombre: "Esteban Villa", correo: "esteban.villa@gmail.com", usuario: "estebanv", fechaNacimiento: ISODate("1995-03-15"), ubicacion: { pais: "Colombia", ciudad: "Tuluá" }, amigos: [32, 36] },
+    { _id: 35, nombre: "Adriana Mendoza", correo: "adriana.mendoza@gmail.com", usuario: "adrianam", fechaNacimiento: ISODate("1994-08-20"), ubicacion: { pais: "Colombia", ciudad: "Apartadó" }, amigos: [33, 37] },
+    { _id: 36, nombre: "Oscar Peralta", correo: "oscar.peralta@gmail.com", usuario: "oscarp", fechaNacimiento: ISODate("1990-04-17"), ubicacion: { pais: "Colombia", ciudad: "Turbo" }, amigos: [34, 38] },
+    { _id: 37, nombre: "Andrea Castro", correo: "andrea.castro@gmail.com", usuario: "andreac", fechaNacimiento: ISODate("1998-07-26"), ubicacion: { pais: "Colombia", ciudad: "Ciénaga" }, amigos: [35, 39] },
+    { _id: 38, nombre: "Julio Restrepo", correo: "julio.restrepo@gmail.com", usuario: "julior", fechaNacimiento: ISODate("1988-05-14"), ubicacion: { pais: "Colombia", ciudad: "Caucasia" }, amigos: [36, 40] },
+    { _id: 39, nombre: "Luisa Vargas", correo: "luisa.vargas@gmail.com", usuario: "luisav", fechaNacimiento: ISODate("1992-02-25"), ubicacion: { pais: "Colombia", ciudad: "Aguachica" }, amigos: [37, 41] },
+    { _id: 40, nombre: "Ignacio Palacios", correo: "ignacio.palacios@gmail.com", usuario: "ignaciop", fechaNacimiento: ISODate("1993-09-29"), ubicacion: { pais: "Colombia", ciudad: "Puerto Asís" }, amigos: [38, 42] },
+    { _id: 41, nombre: "Mariana Reyes", correo: "mariana.reyes@gmail.com", usuario: "marianar", fechaNacimiento: ISODate("1997-11-19"), ubicacion: { pais: "Colombia", ciudad: "Ipiales" }, amigos: [39, 43] },
+    { _id: 42, nombre: "Francisco Mejía", correo: "francisco.mejia@gmail.com", usuario: "franciscom", fechaNacimiento: ISODate("1996-04-13"), ubicacion: { pais: "Colombia", ciudad: "Puerto López" }, amigos: [40, 44] },
+    { _id: 43, nombre: "Nicolás Álvarez", correo: "nicolas.alvarez@gmail.com", usuario: "nicolasa", fechaNacimiento: ISODate("1995-10-22"), ubicacion: { pais: "Colombia", ciudad: "Barrancabermeja" }, amigos: [41, 45] },
+    { _id: 44, nombre: "Gloria López", correo: "gloria.lopez@gmail.com", usuario: "glorial", fechaNacimiento: ISODate("1994-12-05"), ubicacion: { pais: "Colombia", ciudad: "Guamal" }, amigos: [42, 46] },
+    { _id: 45, nombre: "Rubén Herrera", correo: "ruben.herrera@gmail.com", usuario: "rubenh", fechaNacimiento: ISODate("1990-03-09"), ubicacion: { pais: "Colombia", ciudad: "Tierralta" }, amigos: [43, 47] },
+    { _id: 46, nombre: "Yolanda Velásquez", correo: "yolanda.velasquez@gmail.com", usuario: "yolandav", fechaNacimiento: ISODate("1991-11-01"), ubicacion: { pais: "Colombia", ciudad: "Guapi" }, amigos: [44, 48] },
+    { _id: 47, nombre: "Tomás Ruiz", correo: "tomas.ruiz@gmail.com", usuario: "tomasr", fechaNacimiento: ISODate("1996-05-27"), ubicacion: { pais: "Colombia", ciudad: "Piedecuesta" }, amigos: [45, 49] },
+    { _id: 48, nombre: "Eva Cárdenas", correo: "eva.cardenas@gmail.com", usuario: "evac", fechaNacimiento: ISODate("1988-07-30"), ubicacion: { pais: "Colombia", ciudad: "Barbosa" }, amigos: [46, 50] },
+    { _id: 49, nombre: "Héctor Ramírez", correo: "hector.ramirez@gmail.com", usuario: "hectorr", fechaNacimiento: ISODate("1995-02-18"), ubicacion: { pais: "Colombia", ciudad: "La Dorada" }, amigos: [47, 50] },
+    { _id: 50, nombre: "Lucía Ortiz", correo: "lucia.ortiz@gmail.com", usuario: "luciao", fechaNacimiento: ISODate("1992-06-14"), ubicacion: { pais: "Colombia", ciudad: "Yarumal" }, amigos: [48, 49] }
+]);
+
+//Muestra todos los documentos de la base de datos
+    db.usuarios.find()
+
+//Inserción de un nuevo documento
+    db.usuarios.insertOne()
+
+//Seleccionar un usuario específico por su ubicación:
+    db.usuarios.find({ ubicacion: {
+        pais: 'Colombia',
+        ciudad: 'Medellín'} 
+    });
+
+//Actualización de un documento
+//Actualizar la ciudad de un usuario:
+    db.usuarios.updateOne(
+        { nombre: 'Luis Paredes' },
+        { $set: { "ubicacion.ciudad": "Cali" } }
+    );
+
+//Eliminación de un documento
+//Eliminar un usuario específico:
+    db.usuarios.deleteOne({ nombre: "Fernando Blanco"});
+
+//2. Consultas con filtros y operadores
+//Filtro por ubicación 
+    db.usuarios.find({ "ubicacion.ciudad": "Bogotá" });
+
+//Usuarios nacidos después de 1995:
+    db.usuarios.find({ fechaNacimiento: { $gt: ISODate("1995-01-01") } });
+
+//Combinación de condiciones con $and y $or:
+//Usuarios en Medellín o nacidos después de 1995:
+    db.usuarios.find({
+        $or: [
+            { "ubicacion.ciudad": "Medellín" },
+            { fechaNacimiento: { $gt: ISODate("1995-01-01") } }
+        ]});
+
+
+//Filtro utilizando $regex (correos que comiencen por a)
+    db.usuarios.find({ correo: { $regex: /^a/i } });
+
+//3. Consultas de agregación
+//Contar usuarios por ciudad:
+    db.usuarios.aggregate([
+        { $group: { _id: "$ubicacion.ciudad", totalUsuarios: { $sum: 1 } } }
+    ]);
+
+//Edad promedio de los usuarios (suponiendo que necesitas calcular la edad):
+    db.usuarios.aggregate([
+        {
+            $addFields: {
+                edad: { $subtract: [2024, { $year: "$fechaNacimiento" }] }
+            }
+        },
+        {
+            $group: {
+                _id: null,
+                promedioEdad: { $avg: "$edad" }
+            }
+        }
+    ]);
+
+//Usuarios con más amigos (top 5):
+    db.usuarios.aggregate([
+        { $project: { nombre: 1, totalAmigos: { $size: "$amigos" } } },
+        { $sort: { totalAmigos: -1 } },
+        { $limit: 5 }
+    ]);
+
+//Suma total de amigos de todos los usuarios:
+    db.usuarios.aggregate([
+        { $unwind: "$amigos" },
+        { $group: { _id: null, totalAmigos: { $sum: 1 } } }
+    ]);
+
+//Usuarios agrupados por año de nacimiento:
+    db.usuarios.aggregate([
+        { $group: { _id: { $year: "$fechaNacimiento" }, totalUsuarios: { $sum: 1 } } },
+        { $sort: { _id: 1 } }
+    ]);
+
+
